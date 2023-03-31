@@ -1,10 +1,14 @@
+*{
+    margin: 0px;
+}
 nav{
-    width: 1440px;
+    width: 100%;
     height: 100px ;
-    background-color: transparent;
+    background-color: #093426;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 body{
@@ -24,13 +28,14 @@ header{
     padding-right: 10%;
     }
     
-.logo{
-    height: 50px;
-    width: fit-content;
-    padding-left: 50px ;
-    display: flex;
-    align-items: center;
-}
+    .logo{
+        height: 50px;
+        width: fit-content;
+        padding-left: 50px ;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+    }
 
 .nav-con ul{
     list-style: none;
@@ -40,7 +45,9 @@ header{
 .nav-con ul li{
     display: inline;
     padding-right: 40px;
+    color: black;
 }
+
 
 .nav-con{
     width: 100% ;
@@ -74,27 +81,42 @@ input{
 
 .side-container{
     width: 50%;
+    margin-bottom: 50px;
     
 }
 
 #block{
-    background-color: lightgrey;
     width: 470px;
     height: 470px;
     display: grid;
     place-items: center;
     color: white;
+    background-image: url("../assets/Album Covers/Untitled\ design.png");
+    background-color: black;
+
+
 }
+#block>h1{
+    color: white;
+    font-size: 50px;
+}
+
+
+
 
 #right-top{
     width: 100%;    
     display: flex;
     flex-direction: row;
+    gap: 30px;
+    text-align: center;
+    margin-top: 100px;
 
 }
 
 #right-top h3{
     margin-right: 60px;
+    
 }
 
 
@@ -115,4 +137,48 @@ input{
 a{
     color:black;
     text-decoration: none;
+}
+
+.title{
+    margin-bottom: 50px;
+}
+.song{
+    width: 100%;
+    border-bottom: 2px solid black;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  
+}
+
+.song>h5{
+    font-size: smaller;
+    text-align: center;
+}
+#right-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.now-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.now-container>div>img{
+    height: 70px;
+    width: 70px;
+}
+
+.now-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
